@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Advanced CSS - Assignment 1</title>
+<style>
+a[target="_parent"] {
+    color:green;
+    }
+
+ a[target="_blank"] {
+    color:red
+    }
+ 
+[class|="top-text"] {
+    color:red
+    }
+[class|="text"] {color:blue
+
+    }
+
+
+ #first-div > p::after
+{
+content: "NEW";
+color: yellow;
+background-color: black;
+}
+
+p:hover:nth-child(8){
+font-style:italic;
+} 
+
+
+
+  </style>
+</head>
+
+<body>
+
+<h1>Main Heading</h1>
+
+<p>Paragraph 1</p>
+<a href="https://www.google.com/" target="_parent">Google</a>
+<a href="https://www.google.com/doodles" target="_parent"> Google Doodles</a>
+<a href="https://www.link-group.eu/" target="_blank">Goto Link Group</a>
+<div id="first-div">
+
+<h2>Subheading</h2>
+
+<p>Paragraph 2 </p>
+<p>Paragraph 3 </p>
+
+<div id="second-div">
+
+<h3>Sub subheading</h3>
+
+<p class="top-text">Paragraph 4</p>
+<p class="text">Paragraph 5</p>
+<p class="top-text">Paragraph 6</p>
+<p class="text">Paragraph 7</p>
+<p class="top-text">Paragraph 8</p>
+</div>
+</div>
+
+<p>Paragraph 9</p>
+<p>Paragraph 10</p>
+
+</body>
+
+</html>
